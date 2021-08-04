@@ -1,0 +1,199 @@
+@import "colores";
+@import "tamaños";
+@import "mixins";
+
+/* comienza clases de fondos y font-family */
+.colorDeFondo{
+    @include colorFondo ($colorVerdeUsual)}
+.colorDeFondoD{
+    @include colorFondo ($celesteFondoByLyR)}
+.colorDeFondoC{
+    @include colorFondo ($fondoAzulContacto)}
+/* termina clases de fondos y font-family */
+      
+
+/* comienza css de p y hr */
+p{
+    background-color: $colorCremaFondoTexto;
+    color: $colorVerdeUsual;
+    text-align: justify;
+    text-indent: 25px;}
+hr{
+    color: $colorHr;
+    margin: $marginsypaddings;}    
+/* termina css de p y hr */ 
+
+
+/* comienza clases en todas las paginas */ 
+.footer{
+    width: $tamañocompleto;
+    &__item{
+        background-image: linear-gradient(to bottom, $colorCremaFondoTexto,  $celesteFondoByLyR);
+        margin: $marginsypaddings;
+        max-width: $tamañocompleto;
+        height: $tamañocompleto;}
+    &__item-hr{
+        max-width: $tamañocompleto;}}
+.header{
+    &__img{
+       padding: 0px;
+       margin: 0px;
+       height: $tamañocompleto;
+       width: $tamañocompleto;}}
+.nav{
+    background-color: $colorCremaFondoTexto;
+    &__link{
+        color:$colorVerdeUsual;
+        font-size: 25px;}}
+/* termina clases en todas las paginas */ 
+
+
+
+/* comienza clases en "Index" */
+.containerI{
+    max-width: 1320px;
+    margin: auto;
+    &__row{
+        align-items: center;
+        justify-items: center;
+        margin: auto;}
+    &__item{
+        background-color: $colorCremaFondoTexto;
+        padding-top: 30px;
+        padding-bottom: 30px;}
+    &__h1{
+        background-color: $rosaFondo;
+        font-size: 40px;
+        text-align: center;
+        color: $colorVerdeUsual;
+        animation: bounce; 
+        animation-duration: 2s;}
+    &__img{
+        min-width: 309px;
+        max-width: $widthimg;
+        height: $heightimg;}
+    &__col-pFondo{
+        margin: $marginsypaddings;
+        color: $textoIndex;
+        background-blend-mode: overlay;
+        opacity: 70%;}
+    &__p {
+        background-color: $colorHr;
+        color: $textoIndex;
+        font-size: 18px;
+        padding: $marginsypaddings;}}
+/* termina clases en "Index" */
+
+
+/* comienza clases en "Biografia" */
+.containerB{
+    max-width: 1320px;
+    margin: auto;
+    &__row{
+        @extend .containerI__row;}
+    &__h1{
+        @extend .containerL__h1}
+    &__boton{
+        max-width: 200px;
+        margin: auto;
+    }
+    &__item{
+        background-color: $colorCremaFondoTexto;
+        padding: $marginsypaddings;
+        margin-top: $marginsypaddings;
+        margin-bottom: $marginsypaddings;
+        text-align: center; 
+        animation-name: appear; 
+        animation-duration: 2s;}
+    &__h2{
+        text-align: center;
+        color: $colorCremaFondoTexto;
+        background-color: $colorVerdeUsual;}
+        @keyframes appear {
+        0% {opacity: 0;}
+        100% { opacity: 1;}}
+    &__img{
+        max-width: $widthimg;
+        height: $heightimg;}
+    &__row-carousel{
+        @extend .containerB__img;
+        margin: auto;}}
+/* termina clases en "Biografia" */ 
+
+
+/* comienza clases en "Libros" */ 
+.containerL{
+    padding: 2px;
+    &__row{
+        @extend .containerI__row;}
+    &__col-3{
+        max-width: 25%;
+        padding: 0px;}
+    &__h1{
+        text-align: center;
+        color: $colorCremaFondoTexto;
+        background-color: $colorVerdeUsual;
+        margin-top: 20px;
+        margin-bottom: 20px;}
+    &__img{
+        min-width: 90px;
+        max-width: 290px;
+        max-height: 320px;
+        margin-top: $marginsypaddings;
+        margin-bottom: $marginsypaddings;
+        padding: 0px;}
+    &__img:hover{
+        transform: skewY(5deg);}
+    &__item{
+        background-color: $colorCremaFondoTexto;
+        padding: 5px;
+        margin-top: $marginsypaddings;
+        margin-bottom: $marginsypaddings;
+        text-align: center;}
+    &__titulo{
+        color: $colorVerdeUsual;
+        font-size: $marginyfontsize;
+        font-weight: bold;
+        text-align: center;}}
+/* termina clases en "Libros" */
+
+
+/* comienza clases en reseñas */ 
+.containerR{
+    &__h1{
+        @extend .containerL__h1;}}
+/* termina clases en "Reseñas" */
+
+
+/* comienza clases en "Contacto" */
+.containerC{
+    max-width: 300px;
+    &__h1{
+        text-align: center;
+        color: $colorHr;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    &__form{
+       font-size: 15px;
+        color: $colorTextoForm;
+        margin-top: $marginyfontsize;
+        margin-bottom: 100px;            
+        animation: bounceInUp;
+        animation-duration: 2s;
+        text-align: center;}
+    &__item-gris{
+        color: $modalTexto;}}
+/* termina clases en "Contacto" */
+
+
+
+
+  
+
+        
+    
+    
+        
+        
+    

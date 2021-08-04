@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicanos tu opinion acerca del sitio.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/prueba.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="description" content="Ingrese su email y deje un comentario.">
+    <meta name="keywords"  content="CHARLES DICKENS, CONTACTO, OLIVER TWIST, TIEMPOS DIFICILES, GRANDES ESPERANZAS, DAVID COPPERFIELD">
+    <style>
+      @media only screen and (max-width: 992px){
+          .footer{
+              width: 100%;}
+          .footer__item{
+              font-size: 15px;
+          }}
+    </style>
+</head>
+<body class="colorDeFondoC">
+
+  <header class="header">
+    <img src="imgheader.jpg" alt="" width="1519px" height="150px" class="header__img">
+  </header>
+    
+  <nav>
+    <ul class="nav justify-content-end">
+      <li class="nav__item nav-item">
+        <a class="nav__link nav-link" href="Index.html">Inicio</a>
+      </li>
+      <li class="nav__item nav-item">
+        <a class="nav__link nav-link" href="Biografia.html">Biografia</a>
+      </li>
+      <li class="nav__item nav-item">
+        <a class="nav__link nav-link" href="Libros.html">Libros</a>
+      </li>
+      <li class="nav__item nav-item">
+        <a class="nav__link nav-link" href="Resenas.html">Reseñas</a>
+      </li>
+      <li class="nav__item nav-item">
+        <a class="nav__link nav-link" aria-current="page" href="Contacto.html">Contacto</a>
+      </li>      
+    </ul>
+    <hr>
+    <hr/>  
+  </nav>
+
+  <div class="containerC container"> 
+    <div class="containerC__row row">
+      <h1 class="containerC__h1">Contacto</h1>
+    </div>
+    <div class="containerC__row row"> 
+      <form class="containerC__form"> 
+        <div class="containerC__item-gris mb-3">  
+        <input class="form-control" type="text" placeholder="Ingrerse su nombre" aria-label="default input example">
+        </div>
+        <div class="containerC__item mb-3">  
+          <label for="exampleInputEmail1" class="form-label">Ingrese su email</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        <div id="emailHelp" class="containerC__item form-text">No compartiremos tu email con nadie.</div>   
+        </div>
+        <select class="containerC__item form-select" aria-label="Default select example">  
+          <option selected>Genero</option>
+          <option value="1">Femenino</option>
+          <option value="2">Masculino</option>
+          <option value="3">Otro</option>  
+        </select>
+        <br>
+        </br>
+        <div class="containerC__item-gris form-floating"> 
+          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+          <label for="floatingTextarea2">Deja un comentario</label>
+        </div>
+        <br>
+        </br>
+        <div class="containerC__item mb-3 form-check"> 
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Deseo recibir emails de esta pagina</label>
+        </div>  
+        <button type="submit" class="containerC__item btn btn-primary">Enviar</button> 
+        <button type="button" class="containerC__item btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">  
+          Reiniciar
+        </button>
+        <div class="containerC__item-gris modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">¿Estás seguro de que quieres reiniciar sin guardar tus cambios? </h5> 
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-footer">
+                <input class="btn btn-secondary" type="reset" value="Reiniciar" data-bs-dismiss="modal">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">No estoy seguro</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <br>
+    </br>
+    <div class="containerC__row row" style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="Index.html">Inicio</a></li>
+        <li class="breadcrumb-item active-light" aria-current="page">Contacto</li>
+      </ol>
+    </div>
+</div>
+  
+   
+  <footer class="footer"> 
+    <hr class="footer__item-hr"><hr class="footer__item-hr"/> 
+    <p class="footer__item">Charles Dickens fue un autor británico que escribió clásicos amados como "Tiempos difíciles", "Cuento de Navidad", "David Copperfield" y "Grandes esperanzas".</p>
+  </footer>
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
